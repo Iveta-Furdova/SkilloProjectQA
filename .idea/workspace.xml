@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/NewPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/NewPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" afterDir="false" />
+    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="Test 2">
       <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +190,15 @@
       <option name="presentableId" value="Default" />
       <updated>1711967905533</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test 2">
+      <option name="closed" value="true" />
+      <created>1713255345538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713255345538</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,6 +211,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
