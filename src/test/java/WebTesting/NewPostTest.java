@@ -3,11 +3,6 @@ import factory.*;
 //import object.*;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-//import object.Header;
-//import object.HomePage;
-//import object.LoginPage;
-//import object.ProfilePage;
-//import object.NewPost;
 import org.checkerframework.checker.units.qual.N;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;

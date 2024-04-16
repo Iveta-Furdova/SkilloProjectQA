@@ -1,7 +1,7 @@
 package WebTesting;
-//import object.*;
+import object.*;
 
-import factory.*;
+//import factory.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -30,7 +30,7 @@ public class ChangeProfilePictureTest extends TestObject {
 
     @DataProvider(name = "getUser")
     public Object[][] getUsers() {
-        File postPic = new File("src//test//resources//upload//testimage.jpg");
+        File postPic = new File("src//test//resources//upload//greece.jpg");
         String caption = "Testing upload file";
         return new Object[][]{
                 {"IvetaSF", "12345678SF", "5628", postPic, caption}
@@ -38,7 +38,7 @@ public class ChangeProfilePictureTest extends TestObject {
     }
 
     @Test(dataProvider = "getUser")
-    public void testChangeProfilePhoto(String username, String password, String userId, File postPic, String caption) {
+    public void testChangeProfilePhoto(String username, String password, String userId, File postPic, String caption) throws InterruptedException {
         WebDriver webDriver = super.getWebDriver();
         Header header = new Header(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
@@ -50,13 +50,16 @@ public class ChangeProfilePictureTest extends TestObject {
 
         loginPage.completeSigIn(username, password);
 
+
         header.clickProfile();
+
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
+
+        Thread.sleep(3000);
 
         changePhoto.uploadProfilePhoto(postPic);
         changePhoto.typeProfileCaption(caption);
         Assert.assertTrue(profilePage.isUrlLoaded(), "Current page is not profile page!");
-
 
         }
     }

@@ -21,10 +21,9 @@ public class ChangePhoto {
     }
 
     public void uploadProfilePhoto(File file) {
-        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
+        WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(50));
         uploadFile.sendKeys(file.getAbsolutePath());
     }
     public void typeProfileCaption(String text) {
-        // Leave this method empty
     }
 }

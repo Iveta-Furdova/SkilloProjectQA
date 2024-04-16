@@ -30,6 +30,11 @@ public class ProfilePage {
         buttonHoverLike.click();
     }
 
+    public void clickButtonHoverDelete() {
+        WebElement buttonHoverLike = webDriver.findElement(By.xpath("//app-post[2]//*[@class='post-img']"));
+        buttonHoverLike.click();
+    }
+
     public void clickButtonDelete() {
         WebElement buttonDelete = webDriver.findElement(By.xpath("//*[@class='delete-ask']//*[text()='Delete post']"));
         buttonDelete.click();
@@ -52,5 +57,11 @@ public class ProfilePage {
     public boolean isPostLiked() {
         WebElement likedButton = webDriver.findElement(By.xpath("//div[@class='post-modal-container']//*[@class='like far fa-heart fa-2x liked']"));
         return likedButton.isDisplayed();
+    }
+
+    public boolean checkDeleteMessage() {
+        WebElement loginMessageBox = webDriver.findElement(By.xpath("//*[@id='toast-container']//*[@class='toast-message ng-star-inserted']"));
+        return loginMessageBox.isDisplayed();
+
     }
 }

@@ -24,7 +24,6 @@ public class LikeNewPostTest extends TestObject {
         WebDriver webDriver = super.getWebDriver();
 
         Header header = new Header(webDriver);
-        HomePage homePage = new HomePage(webDriver);
         LoginPage loginPage = new LoginPage(webDriver);
         ProfilePage profilePage = new ProfilePage(webDriver);
 

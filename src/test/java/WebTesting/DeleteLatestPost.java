@@ -1,7 +1,7 @@
 package WebTesting;
 import io.github.bonigarcia.wdm.WebDriverManager;
-//import object.*;
-import factory.*;
+import object.*;
+//import factory.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,9 +41,9 @@ public class DeleteLatestPost extends TestObject {
 
         profilePage.clickButtonHoverDelete();
         profilePage.clickButtonDelete();
+        profilePage.clickButtonConfirmDelete();
 
-
-       profilePage.checkDeleteMessage();
+        profilePage.checkDeleteMessage();
         Assert.assertTrue(loginPage.isLoginMessageDisplayed(), "Delete");
 
     }

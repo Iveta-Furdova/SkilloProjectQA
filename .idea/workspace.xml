@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="Test 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/screenshots/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/screenshots/.gitkeep" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +48,7 @@
     "TestNG.ChangeProfilePictureTest.executor": "Run",
     "TestNG.ChangeProfilePictureTest.testChangeProfilePhoto.executor": "Run",
     "TestNG.DeleteLatestPost.deleteLatestPostTest.executor": "Run",
-    "TestNG.DeleteLatestPost.executor": "Run",
+    "TestNG.DeleteLatestPost.executor": "Debug",
     "TestNG.LikeNewPostTest.executor": "Run",
     "TestNG.LikeNewPostTest.likeDislikeLatestPostTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
@@ -73,7 +78,7 @@
       <recent name="object" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.DeleteLatestPost">
+  <component name="RunManager" selected="TestNG.ChangeProfilePictureTest">
     <configuration name="ChangeProfilePictureTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkilloProjectQA" />
       <extension name="coverage">
@@ -85,6 +90,24 @@
       <option name="PACKAGE_NAME" value="WebTesting" />
       <option name="MAIN_CLASS_NAME" value="WebTesting.ChangeProfilePictureTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChangeProfilePictureTest.testChangeProfilePhoto" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SkilloProjectQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WebTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WebTesting" />
+      <option name="MAIN_CLASS_NAME" value="WebTesting.ChangeProfilePictureTest" />
+      <option name="METHOD_NAME" value="testChangeProfilePhoto" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -142,37 +165,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NewPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SkilloProjectQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="WebTesting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="WebTesting" />
-      <option name="MAIN_CLASS_NAME" value="WebTesting.NewPostTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="TestNG.ChangeProfilePictureTest.testChangeProfilePhoto" />
       <item itemvalue="TestNG.ChangeProfilePictureTest" />
       <item itemvalue="TestNG.DeleteLatestPost" />
       <item itemvalue="TestNG.LikeNewPostTest" />
       <item itemvalue="TestNG.LoginTest" />
-      <item itemvalue="TestNG.NewPostTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ChangeProfilePictureTest" />
+        <item itemvalue="TestNG.ChangeProfilePictureTest.testChangeProfilePhoto" />
         <item itemvalue="TestNG.DeleteLatestPost" />
         <item itemvalue="TestNG.LikeNewPostTest" />
-        <item itemvalue="TestNG.ChangeProfilePictureTest" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.NewPostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -242,6 +248,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
