@@ -39,7 +39,7 @@ public class DeleteLatestPost extends TestObject {
         header.clickProfile();
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
 
-       /// profilePage.clickButtonHoverDelete();
+        profilePage.clickButtonHoverDelete();
         //profilePage.clickButtonDelete();
 
 
