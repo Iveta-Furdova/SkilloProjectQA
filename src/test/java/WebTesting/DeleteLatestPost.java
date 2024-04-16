@@ -1,7 +1,7 @@
 package WebTesting;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import object.*;
-//import factory.*;
+//import object.*;
+import factory.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -40,10 +40,10 @@ public class DeleteLatestPost extends TestObject {
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
 
         profilePage.clickButtonHoverDelete();
-        //profilePage.clickButtonDelete();
+        profilePage.clickButtonDelete();
 
 
-       // profilePage.checkDeleteMessage();
+       profilePage.checkDeleteMessage();
         Assert.assertTrue(loginPage.isLoginMessageDisplayed(), "Delete");
 
     }

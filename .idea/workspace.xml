@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="Test 2">
+    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="Test 3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713255345538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test 3">
+      <option name="closed" value="true" />
+      <created>1713255377184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713255377184</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test 3">
+      <option name="closed" value="true" />
+      <created>1713255412623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713255412623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +232,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 2" />
+    <MESSAGE value="Test 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
