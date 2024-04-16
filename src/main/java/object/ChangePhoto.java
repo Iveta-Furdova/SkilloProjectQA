@@ -9,19 +9,13 @@ import java.io.File;
 
 public class ChangePhoto {
     private final WebDriver webDriver;
-
-
-
     public ChangePhoto(WebDriver driver){
         this.webDriver = driver;
         PageFactory.initElements(webDriver, this);
     }
     public void uploadProfilePhoto(File file){
-        ////*[@class='form-group']//div/input[@type='file'] - hidden
         WebElement uploadFile = webDriver.findElement(By.xpath("//*[@id='upload-img']"));
         uploadFile.sendKeys(file.getAbsolutePath());
-
-
     }
 
     public void typeProfileCaption(String text) {

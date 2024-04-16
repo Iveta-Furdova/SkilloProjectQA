@@ -22,7 +22,7 @@ public class HomePage {
 
     public HomePage(WebDriver driver){
         this.webDriver = driver;
-        PageFactory.initElements(driver, this); // Initialize Page Factory elements
+        PageFactory.initElements(driver, this);
     }
 
     public void navigateTo(){

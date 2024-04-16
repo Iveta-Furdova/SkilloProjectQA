@@ -30,11 +30,6 @@ public class Header {
     public void clickNewPost(){
         newPostLink.click();
     }
-    /*
-    public boolean isEnabledLoginLink(){
-        return loginLink.isEnabled();
-    }
-    */
 
     public  void clickProfile(){
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));

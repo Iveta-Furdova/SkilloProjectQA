@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="Test 3">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/reports/.gitkeep" afterDir="false" />
+    <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="gitkeppfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713271259874</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gitkeppfile">
+      <option name="closed" value="true" />
+      <created>1713271404283</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713271404283</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +255,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test 2" />
     <MESSAGE value="Test 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test 3" />
+    <MESSAGE value="gitkeppfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="gitkeppfile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
