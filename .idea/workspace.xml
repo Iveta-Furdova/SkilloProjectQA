@@ -5,31 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec96c796-bf00-45c8-96e5-fae490ae07d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/NewPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/upload/greece.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/upload/testphoto.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ChangePhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/NewPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ChangePhoto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/NewPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/NewPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/ChangeProfilePictureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LikeNewPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/NewPostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebTesting/TestObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +56,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.ChangeProfilePictureTest.executor": "Run",
     "TestNG.ChangeProfilePictureTest.testChangeProfilePhoto.executor": "Run",
-    "TestNG.DeleteLatestPost.deleteLatestPostTest.executor": "Debug",
+    "TestNG.DeleteLatestPost.deleteLatestPostTest.executor": "Run",
     "TestNG.DeleteLatestPost.executor": "Run",
     "TestNG.LikeNewPostTest.executor": "Run",
-    "TestNG.LikeNewPostTest.likeDislikeLatestPostTest.executor": "Debug",
+    "TestNG.LikeNewPostTest.likeDislikeLatestPostTest.executor": "Run",
     "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.loginTest.executor": "Run",
     "TestNG.NewLoginTest.executor": "Run",
     "TestNG.NewLoginTest.loginTest.executor": "Run",
     "TestNG.NewPostTest.executor": "Run",
@@ -94,7 +87,7 @@
       <recent name="object" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.DeleteLatestPost">
     <configuration name="ChangeProfilePictureTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkilloProjectQA" />
       <extension name="coverage">
@@ -165,29 +158,17 @@
     </configuration>
     <configuration name="NewPostTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SkilloProjectQA" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="WebTesting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="WebTesting" />
       <option name="MAIN_CLASS_NAME" value="WebTesting.NewPostTest" />
-      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/src/test/resources/reports" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners>
-        <listener class="org.testng.reporters.EmailableReporter" />
-      </listeners>
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,11 +182,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.ChangeProfilePictureTest" />
         <item itemvalue="TestNG.DeleteLatestPost" />
-        <item itemvalue="TestNG.NewPostTest" />
         <item itemvalue="TestNG.LikeNewPostTest" />
+        <item itemvalue="TestNG.ChangeProfilePictureTest" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.NewPostTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,11 +226,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/WebTesting/DeleteLatestPost.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -31,62 +31,20 @@ public class DeleteLatestPost extends TestObject {
         LoginPage loginPage = new LoginPage(webDriver);
         ProfilePage profilePage = new ProfilePage(webDriver);
 
-        homePage.navigateTo();
-        Assert.assertTrue(homePage.isUrlLoaded(), "Current page is not the Home page.");
+        loginPage.navigateTo();
+        Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not Login");
 
-        header.clickLogin();
-        Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not the Login page.");
-
-        loginPage.fillInUserName(username);
-        loginPage.fillInPassword(password);
-
-        loginPage.checkRememberMe();
-        Assert.assertTrue(loginPage.isCheckedRememberMe(), "Remember me checkbox is checked.");
-
-        // THE BELOW IS FOR POM:
-        loginPage.clickSignInButton();
-        //THE BELOW ONE IS FOR FACTORY:
-        //loginPage.clickSignIn();
+        loginPage.completeSigIn(username, password);
 
         header.clickProfile();
-        Assert.assertTrue(profilePage.isUrlLoaded(), "Current page is not the Profile page.");
+        Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
 
-        WebElement profilePageLink = webDriver.findElement(By.id("nav-link-profile"));
-        profilePageLink.click();
+        profilePage.clickButtonHoverDelete();
+        profilePage.clickButtonDelete();
 
-        String profileURL = ProfilePage.PAGE_URL+userId;
 
-        webDriver.get(profileURL);
-        //Previously used locator: /html/body/app-root/div[2]/app-profile/div/div[2]/app-profile-posts-section/div/div[2]/div/app-post-list/div/div/app-post[1]
-        WebElement latestPost = webDriver.findElement(By.xpath("//app-post[1]"));
-
-        Actions actions = new Actions(webDriver);
-        actions.moveToElement(latestPost).perform();
-
-        //Previously used locator: /html/body/app-root/div[2]/app-profile/div/div[2]/app-profile-posts-section/div/div[2]/div/app-post-list/div/div/app-post[1]/div/div[2]/div[1]/i
-        WebElement buttonHoverLike = webDriver.findElement(By.xpath("//app-post[1]/div/div[2]/div[1]/i"));
-        buttonHoverLike.click();
-
-        //Previously used locator: /html/body/ngb-modal-window/div/div/app-post-modal/div/div[2]/div[3]/div/div/div/div[1]/i[1]
-        WebElement buttonDelete = webDriver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-post-modal/div/div[2]/div[3]/div/div/div/div[4]/div/label/a"));
-        buttonDelete.click();
-
-        WebElement buttonConfirmDelete = webDriver.findElement(By.xpath("/html/body/ngb-modal-window/div/div/app-post-modal/div/div[2]/div[3]/div/div/div/div[4]/div/div/button[1]"));
-        buttonConfirmDelete.click();
-
-        WebElement deleteMessageBox = webDriver.findElement(By.xpath("//*[@id='toast-container']//*[@class='toast-message ng-star-inserted']"));
-        Actions actionsForElements = new Actions(webDriver);
-        actionsForElements.moveToElement(deleteMessageBox).perform();
-
-        String expectedLikeMessage = "Post Deleted!";
-
-//        String expectedDislikeMessage = "Post disliked";
-//        String actualMessage = likeMessageBox.getText();
-
-        if (expectedLikeMessage == "Post Deleted!"){
-            System.out.println(deleteMessageBox.getText());
-        }
+        profilePage.checkDeleteMessage();
+        Assert.assertTrue(loginPage.isLoginMessageDisplayed(), "Delete");
 
     }
-
-        }
+}

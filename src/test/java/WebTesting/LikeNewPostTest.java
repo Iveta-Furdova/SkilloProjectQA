@@ -1,17 +1,14 @@
 package WebTesting;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import object.*;
-//import factory.*;
+//import object.*;
+import factory.*;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -31,61 +28,19 @@ public class LikeNewPostTest extends TestObject {
         LoginPage loginPage = new LoginPage(webDriver);
         ProfilePage profilePage = new ProfilePage(webDriver);
 
-        homePage.navigateTo();
-        Assert.assertTrue(homePage.isUrlLoaded(), "Current page is not the Home page.");
 
-        header.clickLogin();
-        Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not the Login page.");
+        loginPage.navigateTo();
+        Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not Login");
 
-        loginPage.fillInUserName(username);
-        loginPage.fillInPassword(password);
-
-        loginPage.checkRememberMe();
-        Assert.assertTrue(loginPage.isCheckedRememberMe(), "Remember me checkbox is checked.");
-
-        // THE BELOW IS FOR POM:
-        loginPage.clickSignInButton();
-        //THE BELOW ONE IS FOR FACTORY:
-        //loginPage.clickSignIn();
+        loginPage.completeSigIn(username, password);
 
         header.clickProfile();
-        Assert.assertTrue(profilePage.isUrlLoaded(), "Current page is not the Profile page.");
+        Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
 
-        WebElement profilePageLink = webDriver.findElement(By.id("nav-link-profile"));
-        profilePageLink.click();
+       profilePage.clickButtonHoverLike();
 
-        String profileURL = ProfilePage.PAGE_URL+userId;
-
-        webDriver.get(profileURL);
-        //Previously used locator: /html/body/app-root/div[2]/app-profile/div/div[2]/app-profile-posts-section/div/div[2]/div/app-post-list/div/div/app-post[1]
-        WebElement latestPost = webDriver.findElement(By.xpath("//app-post[1]"));
-
-        Actions actions = new Actions(webDriver);
-        actions.moveToElement(latestPost).perform();
-
-        //Previously used locator: /html/body/app-root/div[2]/app-profile/div/div[2]/app-profile-posts-section/div/div[2]/div/app-post-list/div/div/app-post[1]/div/div[2]/div[1]/i
-        WebElement buttonHoverLike = webDriver.findElement(By.xpath("//app-post[1]/div/div[2]/div[1]/i"));
-        buttonHoverLike.click();
-
-        //Previously used locator: /html/body/ngb-modal-window/div/div/app-post-modal/div/div[2]/div[3]/div/div/div/div[1]/i[1]
-        WebElement buttonLike = webDriver.findElement(By.xpath("//div[3]/div/div/div/div[1]/i[1]"));
-        buttonLike.click();
-
-        WebElement likeMessageBox = webDriver.findElement(By.xpath("//*[@id='toast-container']//*[@class='toast-message ng-star-inserted']"));
-
-        Actions actionsForElements = new Actions(webDriver);
-        actionsForElements.moveToElement(likeMessageBox).perform();
-
-        String expectedLikeMessage = "Post liked";
-
-        String expectedDislikeMessage = "Post disliked";
-        String actualMessage = likeMessageBox.getText();
-
-        if (expectedLikeMessage == "Post liked"){
-            System.out.println(actualMessage);
-        } else {
-            System.out.println(expectedDislikeMessage);
-        }
+       profilePage.clickLikeButton();
+       Assert.assertTrue(profilePage.isPostLiked(),"Post is not Liked!");
 
     }
 

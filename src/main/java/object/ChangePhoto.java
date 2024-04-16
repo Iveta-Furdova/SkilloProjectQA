@@ -11,6 +11,7 @@ public class ChangePhoto {
     private final WebDriver webDriver;
 
 
+
     public ChangePhoto(WebDriver driver){
         this.webDriver = driver;
         PageFactory.initElements(webDriver, this);
@@ -21,5 +22,9 @@ public class ChangePhoto {
         uploadFile.sendKeys(file.getAbsolutePath());
 
 
+    }
+
+    public void typeProfileCaption(String text) {
+        // Leave this method empty
     }
 }

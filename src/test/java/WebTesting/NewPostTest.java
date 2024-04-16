@@ -1,5 +1,7 @@
 package WebTesting;
 import factory.*;
+//import object.*;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 //import object.Header;
 //import object.HomePage;
@@ -25,7 +27,7 @@ import java.util.concurrent.TimeUnit;
 public class NewPostTest extends TestObject {
     @DataProvider(name = "getUser")
     public Object[][] getUsers() {
-        File postPic = new File("src//test//resources//upload//testimage.jpg");
+        File postPic = new File("src//test//resources//upload//greece.jpg");
         String caption = "Testing upload file";
         return new Object[][]{
 
@@ -40,18 +42,11 @@ public class NewPostTest extends TestObject {
         LoginPage loginPage = new LoginPage(webDriver);
         ProfilePage profilePage = new ProfilePage(webDriver);
         NewPost newPost = new NewPost(webDriver);
+
         loginPage.navigateTo();
         Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not Login");
 
-        loginPage.completeSingIn(username, password);
-
-        // Add wait for the profile page to load
-
-
-        // After the profile page loads, proceed with the test
-        //profilePage = new ProfilePage(webDriver);
-        //header.clickNewPost();
-       // Assert.assertTrue(profilePage.isUrlLoaded(), "The new post page is not loaded");
+        loginPage.completeSigIn(username, password);
 
         header.clickProfile();
         Assert.assertTrue(profilePage.isUrlLoaded(userId),"Current page is not profile page"+ userId + "user");
@@ -61,13 +56,16 @@ public class NewPostTest extends TestObject {
 
         newPost.uploadPicture(postPic);
         String actualImageText = newPost.uploadedImageText();
-        Assert.assertTrue(newPost.isImageUploaded("testimage.jpg"),"Image is not uploaded");
-        Assert.assertEquals(actualImageText, "testimage.jpg", "Incorect image is uploaded");
+        Assert.assertTrue(newPost.isImageUploaded("greece.jpg"),"Image is not uploaded");
+        Assert.assertEquals(actualImageText, "greece.jpg", "Incorect image is uploaded");
 
         newPost.typePostCaption(caption);
         newPost.clickCreatePost();
+        Assert.assertTrue(profilePage.isUrlLoaded(), "Current page is not profile page!");
 
-        Assert.assertTrue(profilePage.isUrlLoaded(userId),"Current page is not progile page for" + userId + "user");
+
+        loginPage.checkLoginMessage();
+        Assert.assertTrue(loginPage.isLoginMessageDisplayed(), "New Post message is not displayed");
 
     }
 }

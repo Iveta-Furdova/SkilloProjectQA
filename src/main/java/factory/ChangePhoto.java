@@ -1,6 +1,5 @@
 package factory;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,14 +15,16 @@ public class ChangePhoto {
     @FindBy(xpath = "//*[@id='upload-img']")
     private WebElement uploadFile;
 
-    public ChangePhoto(WebDriver driver){
+    public ChangePhoto(WebDriver driver) {
         this.webDriver = driver;
         PageFactory.initElements(webDriver, this);
     }
-    public void uploadProfilePhoto(File file){
-        ////*[@class='form-group']//div/input[@type='file'] - hidden
+
+    public void uploadProfilePhoto(File file) {
         WebDriverWait wait = new WebDriverWait(this.webDriver, Duration.ofSeconds(15));
-//        uploadFile.click();
         uploadFile.sendKeys(file.getAbsolutePath());
+    }
+    public void typeProfileCaption(String text) {
+        // Leave this method empty
     }
 }

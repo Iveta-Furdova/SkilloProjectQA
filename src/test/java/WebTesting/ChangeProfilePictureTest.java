@@ -1,7 +1,7 @@
 package WebTesting;
-import object.*;
+//import object.*;
 
-//import factory.*;
+import factory.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -30,7 +30,7 @@ public class ChangeProfilePictureTest extends TestObject {
 
     @DataProvider(name = "getUser")
     public Object[][] getUsers() {
-        File postPic = new File("src//test//resources//upload//greece.jpg");
+        File postPic = new File("src//test//resources//upload//testimage.jpg");
         String caption = "Testing upload file";
         return new Object[][]{
                 {"IvetaSF", "12345678SF", "5628", postPic, caption}
@@ -48,28 +48,15 @@ public class ChangeProfilePictureTest extends TestObject {
         loginPage.navigateTo();
         Assert.assertTrue(loginPage.isUrlLoaded(), "Current page is not Login");
 
-        loginPage.completeSingIn(username, password);
+        loginPage.completeSigIn(username, password);
 
         header.clickProfile();
         Assert.assertTrue(profilePage.isUrlLoaded(userId), "Current page is not profile page" + userId + "user");
-        //Assert.assertTrue(false);
 
         changePhoto.uploadProfilePhoto(postPic);
+        changePhoto.typeProfileCaption(caption);
+        Assert.assertTrue(profilePage.isUrlLoaded(), "Current page is not profile page!");
 
-        try {
-            Thread.sleep(3000); // 5000 milliseconds = 5 seconds
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
-        WebElement changeProfilePicture = webDriver.findElement(By.xpath("//*[@id='toast-container']//*[@class='toast-message ng-star-inserted']"));
-        Actions actionsForElements = new Actions(webDriver);
-        actionsForElements.moveToElement(changeProfilePicture).perform();
-
-        String expectedProfilepictureText = "Profile picture updated";
-
-        if (expectedProfilepictureText.equals("Profile picture updated")) {
-            System.out.println(changeProfilePicture.getText());
         }
     }
-}
